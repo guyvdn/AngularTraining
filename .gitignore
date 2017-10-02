@@ -1,0 +1,10 @@
+node_modules
+bin
+dist
+*.ngfactory.ts
+*.ngsummary.json
+
+topics/javascript/templates/js-node/yarn-error\.log
+
+topics/angular/templates/ng-app/\.esm-cache/
+topics/angular/templates/ng-webpack/build
