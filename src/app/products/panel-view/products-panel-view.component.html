@@ -1,0 +1,9 @@
+<div>
+  <h1>Products panel view</h1>
+  <hr>
+  <div class="row">
+    <div *ngFor="let product of products" class="col-md-12">
+      <app-product-panel [product]="product"></app-product-panel>
+    </div>
+  </div>
+</div>

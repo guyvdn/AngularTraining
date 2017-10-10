@@ -8,7 +8,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './components/sample/sample.component';
 import { NavBarComponent } from './nav/navbar.component';
-import { ProductsPanelViewComponent } from './products/list-view/products-panel-view.component';
+import { ProductPanelComponent } from './products/panel-view/product-panel.component';
+import { ProductsPanelViewComponent } from './products/panel-view/products-panel-view.component';
 import { ProductService } from './products/product.service';
 import { ProductsResolver } from './products/products.resolver';
 import { appRoutes } from './routes';
@@ -26,6 +27,7 @@ import { appRoutes } from './routes';
     SampleComponent,
     NavBarComponent,
     ProductsPanelViewComponent,
+    ProductPanelComponent,
   ],
   providers: [
     // all services

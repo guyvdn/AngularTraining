@@ -4,16 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product.model';
 
 @Component({
-  template: `
-    <div>
-      <h1>Products</h1>
-      <div class="row">
-        <div *ngFor="let product of products" class="col-md-4">
-          <h3>{{product.title}}</h3>
-        </div>
-      </div>
-    </div>
-  `,
+  templateUrl: 'products-panel-view.component.html',
 })
 export class ProductsPanelViewComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
