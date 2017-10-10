@@ -6,14 +6,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { SampleComponent } from './components/sample/sample.component';
 import { NavBarComponent } from './nav/navbar.component';
 import { PricePipe } from './pipes/price.pipe';
-import { ProductPanelComponent } from './products/panel-view/product-panel.component';
-import { ProductsPanelViewComponent } from './products/panel-view/products-panel-view.component';
-import { ProductService } from './products/product.service';
-import { ProductsResolver } from './products/products.resolver';
-import { ProductsTableViewComponent } from './products/table-view/products-table-view.component';
+import {
+    ProductPanelComponent,
+    ProductService,
+    ProductsPanelViewComponent,
+    ProductsResolver,
+    ProductsTableViewComponent,
+} from './products/index';
 import { appRoutes } from './routes';
 
 @NgModule({
@@ -26,7 +27,6 @@ import { appRoutes } from './routes';
   declarations: [
     // all declared components, directives, pipes, ...
     AppComponent,
-    SampleComponent,
     NavBarComponent,
     ProductsPanelViewComponent,
     ProductPanelComponent,
