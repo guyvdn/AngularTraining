@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './components/sample/sample.component';
 import { NavBarComponent } from './nav/navbar.component';
+import { PricePipe } from './pipes/price.pipe';
 import { ProductPanelComponent } from './products/panel-view/product-panel.component';
 import { ProductsPanelViewComponent } from './products/panel-view/products-panel-view.component';
 import { ProductService } from './products/product.service';
@@ -30,6 +31,7 @@ import { appRoutes } from './routes';
     ProductsPanelViewComponent,
     ProductPanelComponent,
     ProductsTableViewComponent,
+    PricePipe,
   ],
   providers: [
     // all services

@@ -3,22 +3,24 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Sku</th>
+      <th class="text-right">Id</th>
       <th>Title</th>
-      <th>Price</th>
-      <th>BasePrice</th>
-      <th>Stocked</th>
+      <th>Sku</th>
+      <th class="text-right">Price</th>
+      <th class="text-right">BasePrice</th>
+      <th class="text-center">Stocked</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let product of products">
-      <td>{{product.id}}</td>
-      <td>{{product.sku}}</td>
+      <td class="text-right">{{product.id}}</td>
       <td>{{product.title}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.basePrice}}</td>
-      <td>{{product.stocked}}</td>
+      <td>{{product.sku}}</td>
+      <td class="text-right">{{product.price | price }}</td>
+      <td class="text-right">{{product.basePrice | price : '$' : 3 }}</td>
+      <td class="text-center">
+        <input type="checkbox" [checked]="product.stocked" onclick="return false;" />
+      </td>
     </tr>
   </tbody>
 </table>

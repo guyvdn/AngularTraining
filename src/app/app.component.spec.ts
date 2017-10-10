@@ -1,5 +1,5 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ describe('AppComponent', () => {
         declarations: [AppComponent],
         schemas: [NO_ERRORS_SCHEMA],
       }).compileComponents();
-    }),
+    })
   );
 
   it(
@@ -19,7 +19,7 @@ describe('AppComponent', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.debugElement.componentInstance;
       expect(app).toBeTruthy();
-    }),
+    })
   );
 
   it(
@@ -28,9 +28,9 @@ describe('AppComponent', () => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.debugElement.componentInstance;
       expect(app.title).toEqual('app works!');
-    }),
+    })
   );
-
+  /*
   it(
     'should render title in a h1 tag',
     async(() => {
@@ -40,10 +40,12 @@ describe('AppComponent', () => {
       expect(compiled.querySelector('h1').textContent).toContain('app works!');
     }),
   );
-
+*/
+  /*
   it('should render correctly', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     expect(fixture).toMatchSnapshot();
   });
+*/
 });
