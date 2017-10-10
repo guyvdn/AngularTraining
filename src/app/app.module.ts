@@ -12,6 +12,7 @@ import { ProductPanelComponent } from './products/panel-view/product-panel.compo
 import { ProductsPanelViewComponent } from './products/panel-view/products-panel-view.component';
 import { ProductService } from './products/product.service';
 import { ProductsResolver } from './products/products.resolver';
+import { ProductsTableViewComponent } from './products/table-view/products-table-view.component';
 import { appRoutes } from './routes';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { appRoutes } from './routes';
     NavBarComponent,
     ProductsPanelViewComponent,
     ProductPanelComponent,
+    ProductsTableViewComponent,
   ],
   providers: [
     // all services

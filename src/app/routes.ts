@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { SampleComponent } from './components/sample/sample.component';
 import { ProductsPanelViewComponent } from './products/panel-view/products-panel-view.component';
 import { ProductsResolver } from './products/products.resolver';
+import { ProductsTableViewComponent } from './products/table-view/products-table-view.component';
 
 export const appRoutes: Routes = [
   {
@@ -11,7 +11,8 @@ export const appRoutes: Routes = [
     resolve: { products: ProductsResolver },
   },
   {
-    component: SampleComponent,
+    component: ProductsTableViewComponent,
     path: 'list',
+    resolve: { products: ProductsResolver },
   },
 ];
