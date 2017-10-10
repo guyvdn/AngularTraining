@@ -1,18 +1,23 @@
+import '../rxjs-extensions';
+
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-import { appRoutes } from '../routes';
 import { AppComponent } from './app.component';
 import { SampleComponent } from './components/sample/sample.component';
 import { NavBarComponent } from './nav/navbar.component';
+import { ProductsPanelViewComponent } from './products/list-view/products-panel-view.component';
+import { ProductService } from './products/product.service';
+import { ProductsResolver } from './products/products.resolver';
+import { appRoutes } from './routes';
 
 @NgModule({
   imports: [
     // other modules we depend on
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
   declarations: [
@@ -20,9 +25,12 @@ import { NavBarComponent } from './nav/navbar.component';
     AppComponent,
     SampleComponent,
     NavBarComponent,
+    ProductsPanelViewComponent,
   ],
   providers: [
     // all services
+    ProductService,
+    ProductsResolver,
   ],
   bootstrap: [AppComponent], // the root component
 })
