@@ -9,11 +9,11 @@
     "test": "jest --watch",
     "api": "nodemon ./server/server.js",
     "lint": "ng lint",
-    "format":
-      "prettier --semi --single-quote --trailing-comma all --parser typescript --write './src/**/*.{ts,scss}'"
+    "format": "prettier --semi --single-quote --trailing-comma all --parser typescript --write './src/**/*.{ts,scss}'"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^4.4.4",
     "@angular/common": "^4.3.0",
     "@angular/compiler": "^4.3.0",
     "@angular/core": "^4.3.0",
@@ -29,6 +29,7 @@
     "express": "^4.15.2",
     "faker": "^4.1.0",
     "morgan": "^1.8.1",
+    "ng2-toastr": "^4.1.2",
     "nodemon": "^1.11.0",
     "rxjs": "^5.4.2",
     "sort-on": "^2.0.0",

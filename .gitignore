@@ -9,3 +9,4 @@ topics/javascript/templates/js-node/yarn-error\.log
 topics/angular/templates/ng-app/\.esm-cache/
 topics/angular/templates/ng-webpack/build
 coverage/
+package-lock.json
